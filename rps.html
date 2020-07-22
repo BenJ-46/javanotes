@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let choices = {`r`, `p`, `s`}
+        let ties = 0
+        let wins = 0
+        let losses = 0
+        
+        for (let i = 0; i < 10; i++ )
+
+        let choice = prompt(`What would you like to play? Choose "r""p""s"`)
+
+        let compchoice = choices[Math.floor(Math.random() * choices.length)]
+         
+
+        if (choice=== compchoice) {
+            alert(`its a tie! Total ties so far: ${ties}`)
+        } esle if ((choice===`r` && compchoice=== `s`)) ||
+        (choice ===`p` && compchoice===`r`) ||
+        (choice=== `s` && compchoice===`p`)) {
+            wins++
+            alert (`youwin!`)
+            losses++
+            alert (`youlost!`)
+        }
+
+        alert(`
+        wins ${wins}
+        losses ${losses}
+        ties ${ties}
+        `)
+
+    </script>
+</body>
+</html>
